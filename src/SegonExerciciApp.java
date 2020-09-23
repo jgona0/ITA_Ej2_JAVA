@@ -1,6 +1,11 @@
+/*
+ * Segon exercici IT ACADEMY
+ * Xavi Gonzalez JAVA-1
+ */
+
 import java.util.*;
 
-public class E2 {
+public class SegonExerciciApp {
 
 	public static void main(String[] args) {
 
@@ -75,8 +80,10 @@ public class E2 {
 		----------*/
 		System.out.println(" \n Fase 3:");
 		
+		// Creem un hashmap
 		HashMap <Character, Integer> nom_hashmap = new HashMap <Character, Integer> ();
 		
+		//insertem la info de les llistes anteriors
 		for (int i=0; i<nom_lista.size(); i++) {
 			
 			if(nom_hashmap.containsKey(nom_lista.get(i))) {
@@ -98,6 +105,7 @@ public class E2 {
 		----------*/
 		System.out.println(" \n Fase 4:");
 		
+		//creem una llista amb el cognom i li afegim les lletres
 		List<Character> cognom_lista = new ArrayList<Character>();
 		
 		cognom_lista.add('G');
@@ -109,7 +117,7 @@ public class E2 {
 		cognom_lista.add('E');
 		cognom_lista.add('Z');
 		
-		
+		// creem una llista per posar tot el nom sencer
 		List<Character> fullname_lista  = new ArrayList<Character>();
 		
 		fullname_lista.addAll(nom_lista);
