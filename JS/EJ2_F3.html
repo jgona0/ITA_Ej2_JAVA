@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<title>EJ_2_F3</title>    
+</head>
+
+<body>
+    
+<script>
+    
+document.write("<h1>Fase3</h1>");
+
+    var nom = ["X","X","V","6"];
+    
+    
+    // Creem un hashmap
+    var nom_hashmap = new Map();
+    
+    //insertem la info de les llistes anteriors
+    for (var i=0; i<nom.length; i++){
+        
+      if(nom_hashmap.has(nom[i]) == true){
+          nom_hashmap.set(nom[i], nom_hashmap.get(nom[i]) + 1);
+          
+        }else{
+            nom_hashmap.set(nom[i], 1);
+        }
+    }        
+    
+    //imprimim el hashmap
+    for (var [clave, valor] of nom_hashmap){
+        document.write("{"+clave+ "=" +valor+ "}</BR>");    
+    }  
+    
+    
+</script>    
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<title>EJ_2_F2</title>    
+</head>
+
+<body>
+    
+<script>
+    
+document.write("<h1>Fase2</h1>");
+
+    var nom = ["X","A","V","6"];
+    
+    // Al bucle, si la lletra és una vocal imprimeix a la consola: ‘VOCAL’. Sinó, imprimeix: ‘CONSONANT’.
+    // Si trobes un numero, mostra per pantalla: ‘Els noms de persones no contenen números!’.  
+    for (var i=0; i < nom.length; i++) {	
+        
+        var letra = nom[i];
+        
+        if(!isNaN(letra)){
+            document.write(letra +" Els noms de les persones no contenen numeros </br>");
+        
+        }else{
+            
+            if(letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U") {
+                document.write(letra +" VOCAL</br>");
+            }else{
+                document.write(letra +" CONSONANTE</br>");
+            }
+        }
+        
+    }  
+    
+    
+</script>    
+    
+</body>
+</html>
